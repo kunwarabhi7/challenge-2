@@ -21,7 +21,7 @@ const Navbar = () => {
         
        <Menu as="div" className="relative ml-10 inline-block text-left">
       <div>
-        <Menu.Button className="inline-flex w-full justify-center rounded-xl   px-4 py-2  font-medium text-xl  hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-100">
+        <Menu.Button className="inline-flex w-full text-gray-400 hover:text-gray-800 justify-center rounded-xl   px-4 py-2  font-medium text-xl  hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-100">
           Features
           <ChevronDownIcon className="-mr-1 ml-2 h-5 w-5" aria-hidden="true" />
         </Menu.Button>
@@ -113,7 +113,7 @@ const Navbar = () => {
     </Menu>
     <Menu as="div" className="relative ml-1 inline-block text-left">
       <div>
-        <Menu.Button className="inline-flex w-full justify-center rounded-xl   px-4 py-2  font-medium text-xl  hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-100">
+        <Menu.Button className="inline-flex w-full justify-center rounded-xl text-gray-400 hover:text-gray-800   px-4 py-2  font-medium text-xl  hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-100">
           Company
           <ChevronDownIcon className="-mr-1 ml-2 h-5 w-5" aria-hidden="true" />
         </Menu.Button>
@@ -176,9 +176,12 @@ Blog                 </button>
       </Transition>
     </Menu>
     </div>
-    <h1 className='text-xl mt-2 ml-1 font-medium'>Careers</h1>
-    <h1 className='text-xl mt-2 ml-8 font-medium'>About</h1>
-    
+    <h1 className='text-xl mt-2 ml-1 font-medium text-gray-400 '>Careers</h1>
+    <h1 className='text-xl mt-2 ml-8 font-medium text-gray-400 hover:text-gray-800 cursor-pointer'>About</h1>
+    <div className='flex ml-[850px] items-end justify-end'>
+      <button className='text-gray-400 hover:text-gray-800'>Login</button>
+      <button className='ml-4 border border-gray-400 rounded-lg p-1 text-gray-400 hover:text-gray-800'>Register</button>
+    </div>
     </div>
   )
 }
