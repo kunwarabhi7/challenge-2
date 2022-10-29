@@ -2,7 +2,12 @@ import { Menu, Transition } from '@headlessui/react'
 import React,{Fragment} from 'react'
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
 import Logo from '../images/logo.svg'
-import {RiTodoFill} from 'react-icons/ri'
+import {RiTodoFill , RiAlarmWarningLine} from 'react-icons/ri'
+import {BsCalendarEvent} from 'react-icons/bs'
+import {GoClock} from 'react-icons/go'
+
+
+
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
@@ -43,7 +48,7 @@ const Navbar = () => {
                   <div className='flex'>
 
                   <RiTodoFill className='text-purple-500' size={25} />
-                  Todo List
+                  <h1 className='font-medium pl-4'>Todo List </h1>
                   </div>
                 </a>
               )}
@@ -57,7 +62,11 @@ const Navbar = () => {
                     'block px-4 py-2 text-sm'
                   )}
                 >
-                  Support
+                  <div className='flex'>
+
+<BsCalendarEvent className='text-blue-400' size={25} />
+<h1 className='font-medium pl-4'>Calender </h1>
+</div>
                 </a>
               )}
             </Menu.Item>
@@ -70,7 +79,11 @@ const Navbar = () => {
                     'block px-4 py-2 text-sm'
                   )}
                 >
-                  License
+                  <div className='flex'>
+
+<RiAlarmWarningLine className='text-yellow-500 ' size={25} />
+<h1 className='font-medium pl-4'>Reminders </h1>
+</div>
                 </a>
               )}
             </Menu.Item>
@@ -84,8 +97,11 @@ const Navbar = () => {
                       'block w-full px-4 py-2 text-left text-sm'
                     )}
                   >
-                    Sign out
-                  </button>
+<div className='flex'>
+
+<GoClock className='text-purple-500' size={25} />
+<h1 className='font-medium pl-4'>Planning </h1>
+</div>                  </button>
                 )}
               </Menu.Item>
             </form>
