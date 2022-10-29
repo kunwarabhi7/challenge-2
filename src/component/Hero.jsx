@@ -7,8 +7,8 @@ import HeroImage from '../images/image-hero-desktop.png'
 
 const Hero = () => {
   return (
-    <div className='flex'>
-      <div className='ml-40'>
+    <div className='flex justify-around'>
+      <div className=''>
         <h1 className='text-7xl font-semibold '  >Make <br /> remote work</h1>
         <p>Get your team in sync, no matter your location. <br/> Streamline processes, create team rituals, and <br />watch productivity soar.</p>
  <button className='bg-black text-white px-3 py-2 rounded-xl'>Learn More</button>
@@ -20,7 +20,7 @@ const Hero = () => {
  </div>
       </div>
       <div>
-        <img src={HeroImage} alt="" />
+        <img src={HeroImage} alt="hero" className='w-[540px] h-[580px]'  />
       </div>
     </div>
   )
