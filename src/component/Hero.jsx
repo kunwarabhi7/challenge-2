@@ -8,7 +8,7 @@ import HeroImage from '../images/image-hero-desktop.png'
 const Hero = () => {
   return (
     <div className='flex justify-around'>
-      <div className=''>
+      <div>
         <h1 className='text-7xl font-semibold '  >Make <br /> remote work</h1>
         <p className='text-gray-500 py-8 text-2xl'>Get your team in sync, no matter your location. <br/> Streamline processes, create team rituals, and <br />watch productivity soar.</p>
  <button className='bg-black hover:bg-white hover:text-black border border-black text-white px-8 mt-12 mb-16 py-4 rounded-xl'>Learn More</button>

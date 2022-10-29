@@ -5,7 +5,7 @@ import Logo from '../images/logo.svg'
 import {RiTodoFill , RiAlarmWarningLine} from 'react-icons/ri'
 import {BsCalendarEvent} from 'react-icons/bs'
 import {GoClock} from 'react-icons/go'
-
+import IconMenu from '../images/icon-menu.svg'
 
 
 
@@ -15,9 +15,9 @@ function classNames(...classes) {
 
 const Navbar = () => {
   return (
-    <div className='flex m-8'>
+    <div className='flex m-8 '>
       <img src={Logo} />
-      <div>
+      <div className='hidden md:flex'>
         
        <Menu as="div" className="relative ml-10 inline-block text-left">
       <div>
@@ -37,7 +37,7 @@ const Navbar = () => {
         leaveTo="transform opacity-0 scale-95"
       >
         <Menu.Items className="absolute right-0 z-10 mt-2 w-40 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
-          <div className="py-1">
+          <div className="py-1 ">
             <Menu.Item>
               {({ active }) => (
                 <a
@@ -175,12 +175,16 @@ Blog                 </button>
         </Menu.Items>
       </Transition>
     </Menu>
-    </div>
     <h1 className='text-xl mt-2 ml-1 font-medium text-gray-400 '>Careers</h1>
     <h1 className='text-xl mt-2 ml-8 font-medium text-gray-400 hover:text-gray-800 cursor-pointer'>About</h1>
-    <div className='flex ml-[850px] items-end justify-end'>
+    </div>
+    <div className='hidden md:flex  ml-[285px] '>
       <button className='text-gray-400 hover:text-gray-800'>Login</button>
       <button className='ml-4 border border-gray-400 rounded-lg p-1 text-gray-400 hover:text-gray-800'>Register</button>
+    </div>
+    <div className='flex  md:hidden w-10 h-10 ml-24'>
+      <img src={IconMenu}  alt="" />
+
     </div>
     </div>
   )
