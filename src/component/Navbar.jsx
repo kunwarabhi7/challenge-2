@@ -15,9 +15,12 @@ function classNames(...classes) {
 
 const Navbar = () => {
   return (
-    <div className='flex m-8 '>
-      <img src={Logo} />
-      <div className='hidden md:flex'>
+    <div className='flex basis  m-8  w-full'>
+      <div className='basis-1/6 h-10 w-12'>
+      <img src={Logo} className='w-full h-full'  />
+
+      </div>
+      <div className='hidden md:flex basis-4/6'>
         
        <Menu as="div" className="relative ml-10 inline-block text-left">
       <div>
@@ -178,11 +181,11 @@ Blog                 </button>
     <h1 className='text-xl mt-2 ml-1 font-medium text-gray-400 '>Careers</h1>
     <h1 className='text-xl mt-2 ml-8 font-medium text-gray-400 hover:text-gray-800 cursor-pointer'>About</h1>
     </div>
-    <div className='hidden md:flex  ml-[285px] '>
+    <div className='hidden md:flex  basis-1/6'>
       <button className='text-gray-400 hover:text-gray-800'>Login</button>
       <button className='ml-4 border border-gray-400 rounded-lg p-1 text-gray-400 hover:text-gray-800'>Register</button>
     </div>
-    <div className='flex  md:hidden w-10 h-10 ml-24'>
+    <div className='flex  md:hidden w-10 h-10 ml-48'>
       <img src={IconMenu}  alt="" />
 
     </div>
